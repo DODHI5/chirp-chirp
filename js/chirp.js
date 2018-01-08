@@ -1,7 +1,17 @@
-function chirp(n){
-  // FIX ME
-}
+function chirp(n) {
 
-$(document).ready(function(){
+
+  if (n === 0){
+    return " ";
+    }
+   
+    return "chirp " + chirp(--n);
+  
+
+  
+  
+};
+console.log(chirp(1));
+$(document).ready(function () {
   $("#result").html(chirp(3));
 });
